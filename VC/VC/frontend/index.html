@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Travel Assistance Chatbot</title>
+</head>
+<body>
+    <div id="chat-container">
+        <!-- Dropdown for selecting response mode -->
+        <div id="header">
+            <span>Select Response Mode:</span>
+            <select id="response-mode">
+                <option value="text">Text</option>
+                <option value="voice">Voice</option>
+            </select>
+        </div>
+        <div id="chat-window">
+            <div id="chat-output"></div>
+        </div>
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="Type a message...">
+            <button id="send-btn">Send</button>
+            <button id="mic-btn" aria-label="Activate voice mode">
+                <!-- Inline SVG for microphone icon -->
+                <svg id="mic-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24">
+                    <path d="M480 696q-33 0-56.5-23.5T400 616V376q0-33 23.5-56.5T480 296q33 0 56.5 23.5T560 376v240q0 33-23.5 56.5T480 696Zm-40 280V858q-118-11-199-95.5T160 560h80q0 100 70 170t170 70q100 0 170-70t70-170h80q0 118-81 202.5T520 858v118h-80ZM480 616q9 0 15.5-6.5T502 594V376q0-9-6.5-15.5T480 354q-9 0-15.5 6.5T458 376v218q0 9 6.5 15.5T480 616Z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

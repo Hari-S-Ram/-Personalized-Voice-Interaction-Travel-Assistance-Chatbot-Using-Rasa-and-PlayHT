@@ -1,0 +1,18 @@
+stories:
+- story: User asks for weather
+  steps:
+  - intent: greet
+  - action: action_get_location
+  - action: action_get_weather
+
+- story: User asks for nearby places
+  steps:
+  - intent: greet
+  - action: action_get_location
+  - action: action_get_nearby_places
+
+- story: User wants to plan their day
+  steps:
+  - intent: greet
+  - action: action_get_location
+  - action: action_plan_day_schedule

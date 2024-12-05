@@ -1,0 +1,24 @@
+intents:
+  - greet
+  - get_location
+  - get_weather
+  - get_nearby_places
+  - plan_schedule
+
+actions:
+  - action_get_location
+  - action_get_weather
+  - action_get_nearby_places
+  - action_plan_day_schedule
+
+responses:
+  utter_greet:
+    - text: "Hello, how can I assist you today?"
+  utter_location:
+    - text: "I have detected your location as {location}."
+  utter_weather:
+    - text: "The current weather is {weather_info}."
+  utter_places:
+    - text: "Here are some nearby places: {places_list}."
+  utter_schedule:
+    - text: "Here is your day schedule: {schedule_list}"
